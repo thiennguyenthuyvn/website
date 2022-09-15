@@ -77,7 +77,6 @@ export default function Index({ subscription }) {
 
   return (
     <>
-      <Layout preview={subscription.preview}>
         <Head>{renderMetaTags(metaTags)}</Head>
         <Container>
           <Intro />
@@ -91,9 +90,8 @@ export default function Index({ subscription }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <Xem thêm posts={morePosts} />}
         </Container>
-      </Layout>
     </>
   );
 }
